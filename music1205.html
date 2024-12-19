@@ -16,11 +16,11 @@
                 <th>コード名</th><th>音名</th><th>音</th>
             </tr>
             <tr>
-                <td>C</td><td>ドミソ</td><td><button class="playButton0">♪</button></td>
-                <td>Cm</td><td>ドミ♭ソ</td><td><button class="playButton1">♪</button></td>
-                <td>CM7</td><td>ドミソシ</td><td><button class="playButton2">♪</button></td>
-                <td>C7</td><td>ドミソシ♭</td><td><button class="playButton3">♪</button></td>
-                <td>Cm7</td><td>ドミ♭ソシ♭</td><td><button class="playButton4">♪</button></td>
+                <td>C</td><td>ドミソ</td><td><button id="playButton0">♪</button></td>
+                <td>Cm</td><td>ドミ♭ソ</td><td><button id="playButton1">♪</button></td>
+                <td>CM7</td><td>ドミソシ</td><td><button id="playButton2">♪</button></td>
+                <td>C7</td><td>ドミソシ♭</td><td><button id="playButton3">♪</button></td>
+                <td>Cm7</td><td>ドミ♭ソシ♭</td><td><button id="playButton4">♪</button></td>
             </tr>
 
             <tr>
@@ -72,10 +72,17 @@
             </tr>
         </table>
 
+        <h1>セオリー</h1>
+            <input type="text" id="inputCode">
+            <button id="Theory">検索</button>
+            <p id="result">結果がここに表示されます。</p>
+
+
         <h1>新規作成</h1>
         <table class="Make">
             <tr>
-                <th>名前</th>
+                <th>コード名</th>
+                <th>キー</th>
                 <th>Code1</th>
                 <th>Code2</th>
                 <th>Code3</th>
@@ -83,13 +90,18 @@
             </tr>
 
             <tr>
-                <td><input type="name" /></td>
-                <td><input type="code1"></td>
-                <td><input type="code2"></td>
-                <td><input type="code3"></td>
-                <td><input type="code4"></td>
+                <td><input type="id" /></td>
+                <td><input type="key" /></td>
+                <td><input type="Code1"></td>
+                <td><input type="Code2"></td>
+                <td><input type="Code3"></td>
+                <td><input type="Code4"></td>
+
+                <td><button id="make">登録</button></td>
+
             </tr>
         </table>
 
+        <script src="./MusicScript1210.js"></script>
     </body>
 </html>
